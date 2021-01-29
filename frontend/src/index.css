@@ -1,0 +1,11 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap');
+
+/* Body */
+body {
+  background-color: #ffffff;
+  color: #1d213d;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  margin: 0;
+}

@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap');
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#appBar {
+    align-items: center;
+    background-color: #1d213d;
+    box-sizing: border-box;
+    color: #ffffff;
+    display: flex;
+    font-family: "Open Sans", sans-serif;
+    height: 50px;
+    padding: 0 0 0 25px;
+    width: 100%;
+}
+
+#outerContainer {
+    box-sizing: border-box;
+    padding: 25px;
+}
+
+#moreButton {
+    background-color: #4d98ff;
+    bottom: 25px;
+    box-sizing: border-box;
+    color: #ffffff;
+    left: 25px;
+    padding: 5px 8px 5px 8px;
+    position: absolute;
+}
+#moreButton:hover {
+    cursor: pointer;
+}
+
+.linkContainer {
+    box-sizing: border-box;
+    border: 1px solid #e1e1e1;
+    padding: 15px;
+    margin: 10px 0 0 0;
+}
+.linkContainer:hover {
+    box-shadow: 0 0 5px 1px #e1e1e1;
+}
+.linkContainer span {
+    display: block;
+}
+
+.linkLink {
+    color: #999898;
+    font-size: 18px;
+    margin: 5px 0 0 0;
+}
+
+.linkTitle:hover {
+    text-decoration: underline;
+}

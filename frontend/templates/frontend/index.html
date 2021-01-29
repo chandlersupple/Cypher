@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Search Stack Overflow in only one click to save you time programming" />
+    <meta name="author" content="Chandler Supple">
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo-transparent.png" />
+    <title>Cypher - Search Stack Overflow in a Click</title>
+</head>
+
+<body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+</body>
+
+{% load static %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="{% static 'frontend/main.js' %}"></script>
+<script type="module" src="{% static 'frontend/js/data-loader.js' %}"></script>
+
+</html>
