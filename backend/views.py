@@ -42,8 +42,13 @@ def onShortcut():
     isWord = enchant.Dict("en_US")
     searchParameters = []
 
+    # Removed to remove "isWord" feature
+    # for itemCounter, item in enumerate(broken):
+    #     if len(item) > 0 and isWord.check(item):
+    #         searchParameters.append(item)
+
     for itemCounter, item in enumerate(broken):
-        if len(item) > 0 and isWord.check(item):
+        if len(item) > 0:
             searchParameters.append(item)
 
     # Format URL and get response

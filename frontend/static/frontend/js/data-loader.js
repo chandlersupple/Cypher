@@ -1,3 +1,6 @@
+const { remote } = require('electron');
+const { BrowserWindow } = remote;
+
 function loadData() {
     $.ajax({
         type: "GET",
@@ -34,6 +37,7 @@ function loadData() {
                 });
 
                 localStorage.setItem("title1", parsed[0]["fields"]["title"]);
+                //require("electron").remote.getCurrentWindow().reload();
             }
         },
         error: function(response) {
@@ -42,6 +46,8 @@ function loadData() {
     })
 }
 
-localStorage.setItem("title1", "");
-$(document).ready(loadData());
-var loadInterval = setInterval(loadData, 1000)
+if (localStorage.getItem("title1") == null) {
+    localStorage.setItem("title1", "");
+}
+
+var loadInterval = setInterval(loadData, 1000);

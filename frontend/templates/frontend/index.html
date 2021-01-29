@@ -18,8 +18,11 @@
 </body>
 
 {% load static %}
+<script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="{% static 'frontend/main.js' %}"></script>
 <script type="module" src="{% static 'frontend/js/data-loader.js' %}"></script>
 
+<script>if (window.module) module = window.module;</script>
 </html>
